@@ -55,15 +55,32 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Permitir que o usuário se cadastre na plataforma | ALTA | 
+|RF-002| Permitir que o usuário realize login na plataforma  | ALTA |
+|RF-003| Permitir que o usuário adicione livros a sua biblioteca pessoal   | MÉDIA |
+|RF-004| Permitir que o usuário atribua nota aos livros que leu  | ALTA |
+|RF-005| Permitir que o usuário atribua comentário aos livros que leu  | MÉDIA |
+|RF-006| Permitir que o usuário acesse lista dos livros cadastrados na plataforma (API de livros) | ALTA |
+|RF-007| Permitir que o usuário visualize as notas dos livros e comentários de outros usuários   | ALTA |
+|RF-008| Permitir que o usuário faça busca dos livros na plataforma  | ALTA |
+|RF-009| Permitir que o usuário adicione livros a sua lista de desejos   | BAIXA |
+|RF-010| Permitir que o usuário filtre os livros por genêro   | BAIXA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| A aplicação web precisa ser responsiva | MÉDIA | 
+|RNF-002| A aplicação deverá operá de forma distríbuida na WEB e MOBILE |  ALTA | 
+|RNF-003| O cadastro de usuário deverá ser armazenado de forma criptografada |  ALTA |
+|RNF-004| A aplicação deverá ter alta disponibilidade, acima de 99.5% |  MÉDIA |
+|RNF-005| A aplicação deverá ter desempenho por requisição de no máximo 5 segundos |  BAIXA |
+|RNF-006| A aplicação MOBILE deverá funcionar em ambiente ANDROID e IOS |  BAIXA |
+|RNF-007| A aplicação deverá consumir API externa para popular informações sobre o livro |  ALTA |
+|RNF-008| A metodologia de armazenamento da plataforma será relacional |  BAIXA |
+|RNF-009| O sistema web deve ser compatível com os navegadores Chrome, Firefox e Edge |  BAIXA |
+|RNF-010| A interface deve seguir as diretrizes do protótipo para garantir consistência visual e facilidade de uso |  MÉDIA |
+
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
