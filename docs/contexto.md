@@ -120,14 +120,61 @@ Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, d
 
 Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
 
-![arq](https://github.com/user-attachments/assets/b9402e05-8445-47c3-9d47-f11696e38a3d)
+![rightBookArchitecture](https://github.com/user-attachments/assets/b8b46f72-4841-4d22-b63e-e7c8daa5a4dc)
+
 
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+## 🚀 Frontend  
+### **React**  
+Bilbioteca principal para desenvolvimento web  
+📌 **Bibliotecas complementares:**  
+- **React Router** (roteamento)  
+- **Redux/Context API** (gerenciamento de estado)  
+- **Material-UI** (componentes de interface)  
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+### **React Native**  
+Framework para desenvolvimento mobile  
+📌 **Bibliotecas complementares:**  
+- **React Navigation** (navegação)  
+
+---
+
+## 🖥️ Backend  
+### **Python**  
+Linguagem principal  
+📌 **Frameworks:**  
+- **Flask/Django** (desenvolvimento web)  
+- **Flask-JWT-Extended** (autenticação)  
+
+---
+
+## 🗄️ Banco de Dados  
+- **PostgreSQL** (banco de dados relacional principal)  
+
+---
+
+## 🛠️ Ferramentas de Desenvolvimento  
+### **IDEs**  
+- **Visual Studio Code** (frontend e backend)  
+
+### **Versionamento**  
+- **Git** (controle de versão)  
+- **GitHub** (repositório remoto)  
+
+### **Ferramentas de Teste**  
+- **Jest** (testes frontend)  
+- **Pytest** (testes backend)  
+- **Postman** (testes API)  
+
+---
+
+## ☁️ Infraestrutura  
+### **Hospedagem**  
+- **Vercel** (frontend)  
+- **AWS** (backend)  
+- **Supabase** (banco de dados)  
 
 ## Hospedagem
 
