@@ -2,14 +2,17 @@
 
 O aplicativo a ser desenvolvido tem o objetivo de ajudar a solucionar o desafio na escolha de um bom livro para ler. Além disso possibilitará a organização, a descoberta e compartilhamento de experiências. O objetivo é de faciliar a busca por parte do usuário por informações de livros de interesse e ampliar as informações disponíveis para além do existente nas contracapas.
 
-Objetivo
+## Objetivo
+
 Desenvolver uma plataforma interativa e intuitiva para a descoberta e discussão sobre livros, possibilitando a elaboração de listas, interação com usuários e descoberta de novos títulos.
 
-Justificativa
+## Justificativa
+
 Dificuldade de encontrar de leitores ocasionais em conseguir informações fora de meios digitais.
 Auxiliar aos usuários com informações que facilitem a escolha por determinado livro
 
-Público-alvo
+## Público-alvo
+
 Leitores ocasionais que buscam livros para ler e que desejam informações adicionais para auxiliá-los
 Leitores ávidos com interesse de compartilhar opiniões
 Leitores interessados em analisar as disntintas opiniões sobre determinado livro
@@ -17,6 +20,15 @@ Profissionais de editoras e autores que buscam feedback do público
 
 
 ## Problema
+
+Dificuldade na escolha de um livro – Dada as muitas informações e diversidade de livros existentes, muitos leitores encontram dificuldades para selecionar um livro.
+Pouco acesso à informação física, como as presentes nas contracapas.
+Falta de organização na experiência de leitura,  alguns leitores podem ter dificuldades para acompanhar livros já lidos, os que desejam ler e aqueles recomendados.
+Dificuldade de criação ambientes de interação entre leitores, falta ou existencia de reduzidos espaços para a troca de experiências.
+Dificuldade de acesso a opiniões variadas.
+Dificuldade de obtenção de feedback para editoras e autores.
+
+
 Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
 Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
