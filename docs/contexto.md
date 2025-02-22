@@ -13,39 +13,23 @@ Auxiliar aos usuários com informações que facilitem a escolha por determinado
 
 ## Público-alvo
 
-Leitores ocasionais que buscam livros para ler e que desejam informações adicionais para auxiliá-los
-Leitores ávidos com interesse de compartilhar opiniões
-Leitores interessados em analisar as disntintas opiniões sobre determinado livro
-Profissionais de editoras e autores que buscam feedback do público
+- Leitores ocasionais que buscam livros para ler e que desejam informações adicionais para auxiliá-los
+- Leitores ávidos com interesse de compartilhar opiniões
+- Leitores interessados em analisar as disntintas opiniões sobre determinado livro
+- Profissionais de editoras e autores que buscam feedback do público
 
 
 ## Problema
 
-Dificuldade na escolha de um livro – Dada as muitas informações e diversidade de livros existentes, muitos leitores encontram dificuldades para selecionar um livro.
-
-Pouco acesso à informação física, como as presentes nas contracapas.
-
-Falta de organização na experiência de leitura,  alguns leitores podem ter dificuldades para acompanhar livros já lidos, os que desejam ler e aqueles recomendados.
-
-Dificuldade de criação ambientes de interação entre leitores, falta ou existencia de reduzidos espaços para a troca de experiências.
-
-Dificuldade de acesso a opiniões variadas.
-
-Dificuldade de obtenção de feedback para editoras e autores.
+- Dificuldade na escolha de um livro – Dada as muitas informações e diversidade de livros existentes, muitos leitores encontram dificuldades para selecionar um livro.
+- Pouco acesso à informação física, como as presentes nas contracapas.
+- Falta de organização na experiência de leitura,  alguns leitores podem ter dificuldades para acompanhar livros já lidos, os que desejam ler e aqueles recomendados.
+- Dificuldade de criação ambientes de interação entre leitores, falta ou existencia de reduzidos espaços para a troca de experiências.
+- Dificuldade de acesso a opiniões variadas.
+- Dificuldade de obtenção de feedback para editoras e autores.
 
 A solução a ser desenvolvida tem como inspiração o site www.letterboxd.com.
 
-
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
