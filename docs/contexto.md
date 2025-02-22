@@ -22,11 +22,18 @@ Profissionais de editoras e autores que buscam feedback do público
 ## Problema
 
 Dificuldade na escolha de um livro – Dada as muitas informações e diversidade de livros existentes, muitos leitores encontram dificuldades para selecionar um livro.
+
 Pouco acesso à informação física, como as presentes nas contracapas.
+
 Falta de organização na experiência de leitura,  alguns leitores podem ter dificuldades para acompanhar livros já lidos, os que desejam ler e aqueles recomendados.
+
 Dificuldade de criação ambientes de interação entre leitores, falta ou existencia de reduzidos espaços para a troca de experiências.
+
 Dificuldade de acesso a opiniões variadas.
+
 Dificuldade de obtenção de feedback para editoras e autores.
+
+A solução a ser desenvolvida tem como inspiração o site www.letterboxd.com.
 
 
 Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
