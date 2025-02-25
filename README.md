@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# RIGHT BOOK
 
 `CURSO: Sistemas de Informação`
 
