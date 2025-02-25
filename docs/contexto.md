@@ -18,6 +18,10 @@ Auxiliar aos usuários com informações que facilitem a escolha por determinado
 - Leitores interessados em analisar as disntintas opiniões sobre determinado livro
 - Profissionais de editoras e autores que buscam feedback do público
 
+### Mapa de Empatia
+
+![image](https://github.com/user-attachments/assets/79eafe11-e2a0-4c14-8680-9ef624560732)
+
 
 ## Problema
 
