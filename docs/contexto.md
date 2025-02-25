@@ -135,7 +135,11 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 # Catálogo de Serviços
 
-Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, detalhando suas características e funcionalidades.
+1. Cadastro de usuário: Permite que os usuários se cadastrem na aplicação, disponibilizando informações como nome, email e senha.
+2. Registro de livros: Permite que os usuários registrem na aplicação os livros que já leram, estão lendo e irão ler.
+3. Consulta de livros: Permite que os usuários busquem livros na aplicação.
+4. Avaliação de livros: Permite que os usuários avaliem livros por meio de notas numéricas na aplicação.
+5. Comentário em livros: Permite que os usuários registrem comentários em livros na aplicação.
 
 # Arquitetura da Solução
 
