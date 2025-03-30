@@ -113,7 +113,10 @@ Botão de ação.
 
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
+[Diagrama do fluxo de dados na aplicação.]
+
+![image](https://github.com/user-attachments/assets/d19bc183-cb7d-4531-97b0-2f0e0bb05a23)
+
 
 ## Tecnologias Utilizadas
 
