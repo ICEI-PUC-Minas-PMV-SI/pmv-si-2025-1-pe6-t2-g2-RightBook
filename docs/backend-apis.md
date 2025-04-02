@@ -1,27 +1,130 @@
 # APIs e Web Services
 
-O planejamento de uma aplicação de APIS Web é uma etapa fundamental para o sucesso do projeto. Ao planejar adequadamente, você pode evitar muitos problemas e garantir que a sua API seja segura, escalável e eficiente.
-
-Aqui estão algumas etapas importantes que devem ser consideradas no planejamento de uma aplicação de APIS Web.
-
-[Inclua uma breve descrição do projeto.]
+O **RightBook** é uma plataforma que conecta leitores a um vasto catálogo de livros, permitindo interações, avaliações e recomendações personalizadas. A API do RightBook será responsável por fornecer uma interface eficiente e segura para o acesso a esses recursos, garantindo integração entre aplicativos web e mobile. 
 
 ## Objetivos da API
 
-O primeiro passo é definir os objetivos da sua API. O que você espera alcançar com ela? Você quer que ela seja usada por clientes externos ou apenas por aplicações internas? Quais são os recursos que a API deve fornecer?
+### 1. Fornecer uma interface centralizada para a plataforma  
 
-[Inclua os objetivos da sua api.]
+- A API será o núcleo da comunicação entre os aplicativos web e mobile, garantindo consistência e eficiência no acesso aos dados.  
 
+### 2. Gerenciar usuários e suas interações
+
+- Permitirá cadastro, autenticação e gerenciamento de perfis de usuários. 
+
+### 3. Disponibilizar informações sobre livros
+
+- Oferecerá acesso a um catálogo de livros, incluindo detalhes como título, autor, sinopse e capa.
+- Integrará com serviços externos para enriquecimento de informações.
+
+### 4. Facilitar avaliações e interações entre usuários
+
+- Permitirá que os usuários adicionem avaliações, comentem e recomendem livros dentro da plataforma.
+
+### 5. Garantir escalabilidade e alto desempenho
+
+- Utilizará uma arquitetura otimizada com **PostgreSQL** gerenciado via **Supabase** e hospedagem na **AWS**.
+- Projetada para suportar um grande volume de requisições.
+
+### 6. Manter padrões de segurança e boas práticas  
+
+- Implementará autenticação e autorização robustas.  
+- Garantirá proteção dos dados dos usuários seguindo boas práticas de segurança.  
+
+### 7. Possibilitar futuras integrações e expansões  
+
+- Desenvolvida com modularidade em mente.  
+- Permitirá futuras integrações com novos serviços e funcionalidades.
 
 ## Modelagem da Aplicação
-[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
 
+A aplicação é projetada para gerenciar avaliações e listas de desejos de livros, utilizando dados da API do Google Books. A modelagem segue um paradigma orientado a objetos, estruturando as entidades em classes e estabelecendo os relacionamentos entre elas.
 
-## Tecnologias Utilizadas
+### **Modelagem de Dados**
 
-Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs Web. A tecnologia certa para o seu projeto dependerá dos seus objetivos, dos seus clientes e dos recursos que a API deve fornecer.
+![image](https://github.com/user-attachments/assets/c8629ffe-b197-44fd-87b0-d937ce0c4fb8)
 
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+#### **Reviews**
+- `id: UUID` → Identificador único da avaliação
+- `user_id: UUID` → Identificador do usuário que fez a avaliação
+- `book_id: String` → Identificador do livro avaliado
+- `rating: Int` → Nota dada ao livro
+- `comment: String` → Comentário sobre o livro
+- `date: Date` → Data da avaliação
+
+#### **Users**
+- `id: UUID` → Identificador único do usuário
+- `name: String` → Nome do usuário
+- `password: String` → Senha de acesso
+- `email: String` → Endereço de e-mail
+
+#### **Wish_List**
+- `id: UUID` → Identificador único da lista
+- `user_id: UUID` → Identificador do usuário
+- `book_id: String` → Identificador do livro desejado
+
+#### **Relacionamentos entre Tabelas**
+
+- Um **usuário** pode fazer **várias avaliações** (`Users 1 → 0..* Reviews`).
+- Um **usuário** pode ter **vários livros na lista de desejos** (`Users 1 → 0..* Wish_List`).
+- A API do **Google Books** fornece dados sobre os livros que podem ser avaliados e adicionados às listas de desejos.
+
+### **Entidades e Relacionamentos**
+
+![image](https://github.com/user-attachments/assets/58609d64-99a8-4411-8c3e-de589baec608)
+
+#### **Usuário**
+Representa o usuário do sistema que pode buscar e avaliar livros.  
+- Atributos:
+  - `id: UUID` → Identificador único do usuário
+  - `name: String` → Nome do usuário
+  - `email: String` → Endereço de e-mail
+  - `password: String` → Senha de acesso
+
+#### **Livro**
+Representa um livro disponível na plataforma.  
+- Atributos:
+  - `id: String` → Identificador único do livro
+  - `title: String` → Título do livro
+  - `author: String` → Autor do livro
+  - `published_date: Date` → Data de publicação
+
+#### **Avaliação**
+Relacionamento entre **Usuário** e **Livro**, permitindo que um usuário avalie um livro.  
+- Atributos:
+  - `id: UUID` → Identificador único da avaliação
+  - `user_id: UUID` → Usuário que realizou a avaliação
+  - `book_id: String` → Livro avaliado
+  - `rating: Int` → Nota atribuída ao livro
+  - `comment: String` → Comentário sobre o livro
+
+#### **Relacionamentos entre Classes**
+- Um **Usuário** pode buscar **vários Livros** `(Usuário 1 → N Livros)`.  
+- Um **Usuário** pode avaliar **vários Livros**, e um **Livro** pode ter avaliações de **vários Usuários** `(Usuário 1 → N Avaliações ← N Livros)`.  
+- O sistema permite **salvar** livros desejados para leitura futura.   
+
+## **Tecnologias Utilizadas no Projeto**
+
+A escolha das tecnologias para o desenvolvimento da API Web foi baseada nos objetivos do projeto, garantindo escalabilidade, segurança e eficiência.
+
+## **1. Linguagem de Programação**
+- **Python** → Utilizado devido à sua robustez e vasto ecossistema para desenvolvimento de APIs.
+
+## **2. Frameworks e Bibliotecas**
+- **Django** → Framework web completo, usado para estruturar a aplicação.
+- **Django REST Framework (DRF)** → Extensão do Django que facilita a criação de APIs RESTful.
+
+## **3. Banco de Dados**
+- **PostgreSQL** → Banco de dados relacional escolhido pela sua confiabilidade e escalabilidade.
+
+## **4. Integrações Externas**
+- **Google Books API** → Para obter informações detalhadas sobre livros e facilitar a busca.
+
+## **6. Infraestrutura e Deploy**
+- **Docker** → Containerização da aplicação para garantir portabilidade e escalabilidade.
+- **AWS** → Hospedagem da APIs na nuvem para alta disponibilidade.
+- **NGINX** → Para gerenciamento de requisições e proxy reverso.
+- **Supabase** → Para hospedagem em banco de dados gratuito de alta disponibilidade.
 
 ## API Endpoints
 
@@ -54,17 +157,45 @@ Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+Nossa API está hospedada em uma **EC2** com **proxy reverso pelo NGINX** e utiliza um banco de dados protegido no **Supabase**. Algumas medidas básicas de segurança foram implementadas:
+
+- **Autenticação e Autorização** → Autenticação dos usuários e controle de permissões nos endpoints.  
+- **Criptografia de Senhas** → As senhas são armazenadas de forma segura utilizando hashing.  
+- **Proteção contra Ataques** → Uso do Django ORM para evitar SQL Injection e medidas básicas contra XSS e CSRF.  
+- **Tráfego Seguro** → O NGINX gerencia as requisições e pode ser configurado para HTTPS.  
+- **Banco de Dados Restrito** → Apenas a API tem acesso ao banco, evitando conexões externas não autorizadas.  
 
 ## Implantação
 
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
+### **1. Definição dos Requisitos**  
 
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+A aplicação será executada em uma instância EC2 da AWS, com o Django como framework principal e um banco de dados PostgreSQL no Supabase. Será necessário um servidor web para atuar como proxy reverso, que será o NGINX.
+
+## **2. Escolha da Plataforma de Hospedagem**  
+
+A API será implantada em um ambiente baseado em **AWS EC2**, utilizando **NGINX como proxy reverso** para gerenciar as requisições. O banco de dados será hospedado no **Supabase**, garantindo alta disponibilidade e segurança.  
+
+## **3. Configuração do Ambiente**
+
+O ambiente deve incluir:
+- Um servidor web configurado para rodar a API via proxy reverso no Docker.
+- Configuração das variáveis de ambiente para armazenar credenciais e configurações sensíveis.
+- Instalação das dependências necessárias para o funcionamento da aplicação.
+
+## **4. Deploy da Aplicação**
+
+O processo de deploy inclui:  
+1. Aplicação das migrações do banco de dados.  
+2. Execução da API em um ambiente adequado e conteinerizado.  
+3. Configuração do servidor para direcionar as requisições corretamente.  
+
+## **5. Testes e Validação**
+
+Após a implantação, devem ser realizados testes para garantir que a API está funcionando corretamente no ambiente de produção. Isso inclui verificar conexões, autenticação e funcionamento dos principais endpoints via "collection" do **Postman**.  
+
+## **6. Monitoramento e Manutenção**
+
+Para garantir a estabilidade e o desempenho da aplicação, é essencial configurar um sistema de monitoramento, registrar logs de erro e realizar atualizações periódicas de segurança. Os logs serão armazenados na instância, assim como as métricas de EC2 e Banco podem ser coletadas via Amazon CloudWatch e Supabase Metrics respectivamente.
 
 ## Testes
 
@@ -75,7 +206,3 @@ Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs
 3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
 4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
 5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
-
-# Referências
-
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
