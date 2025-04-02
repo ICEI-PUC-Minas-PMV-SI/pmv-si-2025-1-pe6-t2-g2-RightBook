@@ -107,20 +107,20 @@ Relacionamento entre **Usuário** e **Livro**, permitindo que um usuário avalie
 
 A escolha das tecnologias para o desenvolvimento da API Web foi baseada nos objetivos do projeto, garantindo escalabilidade, segurança e eficiência.
 
-## **1. Linguagem de Programação**
+### **1. Linguagem de Programação**
 - **Python** → Utilizado devido à sua robustez e vasto ecossistema para desenvolvimento de APIs.
 
-## **2. Frameworks e Bibliotecas**
+### **2. Frameworks e Bibliotecas**
 - **Django** → Framework web completo, usado para estruturar a aplicação.
 - **Django REST Framework (DRF)** → Extensão do Django que facilita a criação de APIs RESTful.
 
-## **3. Banco de Dados**
+### **3. Banco de Dados**
 - **PostgreSQL** → Banco de dados relacional escolhido pela sua confiabilidade e escalabilidade.
 
-## **4. Integrações Externas**
+### **4. Integrações Externas**
 - **Google Books API** → Para obter informações detalhadas sobre livros e facilitar a busca.
 
-## **6. Infraestrutura e Deploy**
+### **6. Infraestrutura e Deploy**
 - **Docker** → Containerização da aplicação para garantir portabilidade e escalabilidade.
 - **AWS** → Hospedagem da APIs na nuvem para alta disponibilidade.
 - **NGINX** → Para gerenciamento de requisições e proxy reverso.
@@ -171,29 +171,29 @@ Nossa API está hospedada em uma **EC2** com **proxy reverso pelo NGINX** e util
 
 A aplicação será executada em uma instância EC2 da AWS, com o Django como framework principal e um banco de dados PostgreSQL no Supabase. Será necessário um servidor web para atuar como proxy reverso, que será o NGINX.
 
-## **2. Escolha da Plataforma de Hospedagem**  
+### **2. Escolha da Plataforma de Hospedagem**  
 
 A API será implantada em um ambiente baseado em **AWS EC2**, utilizando **NGINX como proxy reverso** para gerenciar as requisições. O banco de dados será hospedado no **Supabase**, garantindo alta disponibilidade e segurança.  
 
-## **3. Configuração do Ambiente**
+### **3. Configuração do Ambiente**
 
 O ambiente deve incluir:
 - Um servidor web configurado para rodar a API via proxy reverso no Docker.
 - Configuração das variáveis de ambiente para armazenar credenciais e configurações sensíveis.
 - Instalação das dependências necessárias para o funcionamento da aplicação.
 
-## **4. Deploy da Aplicação**
+### **4. Deploy da Aplicação**
 
 O processo de deploy inclui:  
 1. Aplicação das migrações do banco de dados.  
 2. Execução da API em um ambiente adequado e conteinerizado.  
 3. Configuração do servidor para direcionar as requisições corretamente.  
 
-## **5. Testes e Validação**
+### **5. Testes e Validação**
 
 Após a implantação, devem ser realizados testes para garantir que a API está funcionando corretamente no ambiente de produção. Isso inclui verificar conexões, autenticação e funcionamento dos principais endpoints via "collection" do **Postman**.  
 
-## **6. Monitoramento e Manutenção**
+### **6. Monitoramento e Manutenção**
 
 Para garantir a estabilidade e o desempenho da aplicação, é essencial configurar um sistema de monitoramento, registrar logs de erro e realizar atualizações periódicas de segurança. Os logs serão armazenados na instância, assim como as métricas de EC2 e Banco podem ser coletadas via Amazon CloudWatch e Supabase Metrics respectivamente.
 
