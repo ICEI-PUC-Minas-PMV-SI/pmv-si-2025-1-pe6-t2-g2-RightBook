@@ -158,7 +158,7 @@ A escolha das tecnologias para o desenvolvimento da API Web foi baseada nos obje
 ### Endpoint de cadastro
 - Método: POST
 - URL: /api/register/
-- Parâmetros:
+- Body:
   - email: [Email do usuário]
   - username: [Nome do usuário]
   - password: [Senha do usuário]
@@ -179,7 +179,7 @@ A escolha das tecnologias para o desenvolvimento da API Web foi baseada nos obje
 ### Endpoint de login
 - Método: POST
 - URL: /api/login/
-- Parâmetros:
+- Body:
   - username: [Nome do usuário]
   - password: [Senha do usuário]
 - Resposta:
@@ -223,6 +223,8 @@ A escolha das tecnologias para o desenvolvimento da API Web foi baseada nos obje
 - URL: /api/search/user/
 - Parâmetros:
   - username: [Nome do usuário]
+- Header:
+  - Authorization: [Token de algum usuário administrador]
 - Resposta:
   - Sucesso (200 OK)
     ```
@@ -286,7 +288,7 @@ A escolha das tecnologias para o desenvolvimento da API Web foi baseada nos obje
 ### Endpoint de avaliar um livro
 - Método: POST
 - URL: /reviews/
-- Parâmetros:
+- Body:
   - usuario: [ID do usuário]
   - livro: [ID ou ISBN do livro]
   - nota: [Nota da avaliacão do livro]
