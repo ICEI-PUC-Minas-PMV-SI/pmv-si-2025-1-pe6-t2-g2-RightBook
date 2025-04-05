@@ -198,7 +198,7 @@ A escolha das tecnologias para o desenvolvimento da API Web foi baseada nos obje
 
 ### Endpoint de buscar um usuário
 - Método: GET
-- URL: /api/search/user?username=
+- URL: /api/search/user
 - Parâmetros:
   - username: [Nome do usuário]
 - Resposta:
@@ -229,7 +229,7 @@ A escolha das tecnologias para o desenvolvimento da API Web foi baseada nos obje
 
 ### Endpoint de buscar um livro
 - Método: GET
-- URL: /api/search-book?titulo=&autor=&isbn=&categoria=
+- URL: /api/search-book
 - Parâmetros:
   - titulo: [Título do livro]
   - autor: [Autor do livro]
