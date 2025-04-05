@@ -233,8 +233,7 @@ A escolha das tecnologias para o desenvolvimento da API Web foi baseada nos obje
       "username": "",
       "email": "",
       "data_criacao": "",
-      "ultimo_login": "",
-      
+      "ultimo_login": ""
     }
     ```
   - Erro (400 Bad Request)
