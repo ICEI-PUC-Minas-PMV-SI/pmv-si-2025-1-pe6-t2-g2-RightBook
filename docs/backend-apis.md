@@ -155,6 +155,110 @@ A escolha das tecnologias para o desenvolvimento da API Web foi baseada nos obje
     }
     ```
 
+### Endpoint de cadastro
+- Método: POST
+- URL: /api/register/
+- Parâmetros:
+  - email: [Email do usuário]
+  - username: [Nome do usuário]
+  - password: [Senha do usuário]
+- Resposta:
+  - Sucesso (201 Created)
+    ```
+    {
+      "token": ""
+    }
+    ```
+  - Erro (400 Bad Request)
+    ```
+    {
+      "error": "Email/Usuário já existe"
+    }
+    ```
+
+### Endpoint de login
+- Método: POST
+- URL: /api/login/
+- Parâmetros:
+  - username: [Nome do usuário]
+  - password: [Senha do usuário]
+- Resposta:
+  - Sucesso (201 OK)
+    ```
+    {
+      "token": ""
+    }
+    ```
+  - Erro (400 Bad Request)
+    ```
+    {
+      "error": "Credenciais inválidas"
+    }
+    ```
+
+### Endpoint de buscar um livro
+- Método: GET
+- URL: /api/search-book?titulo=&autor=&isbn=&categoria=
+- Parâmetros:
+  - titulo: [Título do livro]
+  - autor: [Autor do livro]
+  - isbn: [Identificador único do livro, conforme o Padrão Internacional de Numeração de Livro]
+  - categoria: [Categoria do livro]
+- Resposta:
+  - Sucesso (200 OK)
+    ```
+    {
+        "id": "",
+        "isbn": "",
+        "titulo": "",
+        "autores": [
+            ""
+        ],
+        "descricao": "",
+        "data_publicacao": "",
+        "paginas": "",
+        "categorias": [
+            ""
+        ],
+        "imagem": ""
+    }
+    ```
+  - Erro (400 Bad Request)
+    ```
+    {
+      "error": "Pelo menos um parãmetro de busca (titulo, autor, isbn, categoria) é obrigatório."
+    }
+    ```
+
+### Endpoint de avaliar um livro
+- Método: POST
+- URL: /reviews/
+- Parâmetros:
+  - usuario: [ID do usuário]
+  - livro: [ID ou ISBN do livro]
+  - nota: [Nota da avaliacão do livro]
+  - comentario: [Comentario da avaliacão do livro]
+- Resposta:
+  - Sucesso (201 Created)
+    ```
+    {
+      "id": ,
+      "livro": "",
+      "nota": ,
+      "comentario": "",
+      "data_criacao": "",
+      "usuario": 
+    }
+    ```
+  - Erro (400 Bad Request)
+    ```
+    {
+      "livro": [
+          "O campo não pode estar vazio"
+      ]
+    }
+    ```
+
 ## Considerações de Segurança
 
 Nossa API está hospedada em uma **EC2** com **proxy reverso pelo NGINX** e utiliza um banco de dados protegido no **Supabase**. Algumas medidas básicas de segurança foram implementadas:
@@ -206,3 +310,40 @@ Para garantir a estabilidade e o desempenho da aplicação, é essencial configu
 3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
 4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
 5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+
+### Buscar um livro
+- Objetivo: Verificar a funcionalidade da busca de livros.
+- Passos: Enviar uma requisicão GET para o endpoint **/api/search-book?titulo=&autor=&isbn=&categoria=**.
+- Resultado Esperado: Retorno com status "200 OK" e informacões do livro conforme os parâmetros.
+
+- Teste realizado:
+  - Parâmetro utilizado:
+    - "titulo": "O Problema dos Três Corpos"
+  
+  - Resultado:
+    ```
+    {
+        "id": "Uvr2DAAAQBAJ",
+        "isbn": [
+            {
+                "type": "ISBN_13",
+                "identifier": "9788543806877"
+            },
+            {
+                "type": "ISBN_10",
+                "identifier": "8543806879"
+            }
+        ],
+        "titulo": "O problema dos três corpos",
+        "autores": [
+            "Cixin Liu"
+        ],
+        "descricao": "Primeiro livro da trilogia que inspirou a série O Problema dos 3 Corpos, da Netflix — dos mesmos criadores de G ame Of Thrones. Principal obra do autor chinês Cixin Liu, vencedor dos prêmios Yinhe (nove vezes), maior prêmio de ficção científica da China, Hugo e Locus, consagrando-o como o primeiro autor não anglófono a vencer o prêmio Hugo de melhor romance. China, final dos anos 1960. Enquanto o país inteiro está sendo devastado pela violência da Revolução Cultural, um pequeno grupo de astrofísicos, militares e engenheiros começa um projeto ultrassecreto envolvendo ondas sonoras e seres extraterrestres. Uma decisão tomada por um desses cientistas mudará para sempre o destino da humanidade e, cinquenta anos depois, uma civilização alienígena a beira do colapso planeja uma invasão. O problema dos três corpos é uma crônica da marcha humana em direção aos confins do universo. Uma clássica história de ficção científica, no melhor estilo de Arthur C. Clarke. Um jogo envolvente em que a humanidade tem tudo a perder.",
+        "data_publicacao": "2016-08-24",
+        "paginas": 369,
+        "categorias": [
+            "Fiction"
+        ],
+        "imagem": "http://books.google.com/books/content?id=Uvr2DAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+    ```
