@@ -386,6 +386,27 @@ Para garantir a estabilidade e o desempenho da aplicação, é essencial configu
     }
     ```
 
+### Teste de cadastro duplicado
+- Descrição: Verificar a funcionalidade do sistema de cadastro de usuário inserindo informações de usuários já existentes.
+- Resultado Esperado: Retorno com status "400 Bad Request" e informe do erro.
+
+- Teste realizado:
+  - Entrada:
+    ```
+    {
+      "email": "mauricio@gmail.com",
+      "username": "mauricio",
+      "password": "7DQ70HDQWD56qwdq7"
+    }
+    ```
+    
+  - Resultado (400 Bad Request):
+    ```
+    {
+      "error": "Email já existe"
+    }
+    ```
+
 ### Teste de cadastro inválido
 - Descrição: Verificar a funcionalidade do sistema de cadastro de usuário inserindo informações inválidas.
 - Resultado Esperado: Retorno com status "400 Bad Request" e informe de erro.
