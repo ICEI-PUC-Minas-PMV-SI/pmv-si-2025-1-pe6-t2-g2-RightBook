@@ -407,13 +407,17 @@ Para garantir a estabilidade e o desempenho da aplicação, é essencial configu
     }
     ```
 
-### Teste de busca um livro
+### Teste de busca de um livro
 - Descrição: Verificar a funcionalidade da busca de livros.
 - Resultado Esperado: Retorno com status "200 OK" e informacões do livro conforme os parâmetros.
 
 - Teste realizado:
   - Entrada:
-    - "titulo": "O Problema dos Três Corpos"
+  ```
+    {
+      "titulo": "O Problema dos Três Corpos"
+    }
+  ```
   
   - Resultado (200 OK):
     ```
@@ -440,5 +444,24 @@ Para garantir a estabilidade e o desempenho da aplicação, é essencial configu
             "Fiction"
         ],
         "imagem": "http://books.google.com/books/content?id=Uvr2DAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+    ```
+
+### Teste de busca de um livro inexistente
+- Descrição: Verificar a funcionalidade da busca de livros buscando um livro inexistente.
+- Resultado Esperado: Retorno com status "404 Not Found" e informe de erro.
+
+- Teste realizado:
+  - Entrada:
+  ```
+    {
+      "titulo": "Fut3b0l"
+    }
+  ```
+  
+  - Resultado (404 Not Found):
+    ```
+    {
+      "error": "Nenhum livro encontrado para os parâmetros fornecidor."
     }
     ```
