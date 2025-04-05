@@ -365,16 +365,38 @@ Para garantir a estabilidade e o desempenho da aplicação, é essencial configu
 4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
 5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
 
+### Cadastro na plataforma
+- Objetivo: Verificar a funcionalidade do sistema de cadastro de usuário.
+- Passos: Enviar uma requisicão POST para o endpoint **/api/register/**.
+- Resultado Esperado: Retorno com status "201 Created" e token do usuário.
+
+- Teste realizado:
+  - Entrada:
+    ```
+    {
+      "email": "mauricio@gmail.com",
+      "username": "mauricio",
+      "password": "7DQ70HDQWD56qwdq7"
+    }
+    ```
+    
+  - Resultado (201 Created):
+    ```
+    {
+      "token": "e66c46c2505ec8d33150ce3a9f169252f6306164"
+    }
+    ```
+
 ### Buscar um livro
 - Objetivo: Verificar a funcionalidade da busca de livros.
-- Passos: Enviar uma requisicão GET para o endpoint **/api/search-book?titulo=&autor=&isbn=&categoria=**.
+- Passos: Enviar uma requisicão GET para o endpoint **/api/search-book**.
 - Resultado Esperado: Retorno com status "200 OK" e informacões do livro conforme os parâmetros.
 
 - Teste realizado:
-  - Parâmetro utilizado:
+  - Entrada:
     - "titulo": "O Problema dos Três Corpos"
   
-  - Resultado:
+  - Resultado (200 OK):
     ```
     {
         "id": "Uvr2DAAAQBAJ",
