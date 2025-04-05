@@ -176,6 +176,27 @@ A escolha das tecnologias para o desenvolvimento da API Web foi baseada nos obje
     }
     ```
 
+### Endpoint de atualizacão de cadastro
+- Método: PUT
+- URL: /api/update/
+- Body:
+  - email: [Email do usuário]
+  - username: [Nome do usuário]
+  - password: [Senha do usuário]
+- Resposta:
+  - Sucesso (200 OK)
+    ```
+    {
+      "message": "Usuário atualizado com sucesso"
+    }
+    ```
+  - Erro (400 Bad Request)
+    ```
+    {
+      "error": "Email/Usuário já existe"
+    }
+    ```
+
 ### Endpoint de login
 - Método: POST
 - URL: /api/login/
