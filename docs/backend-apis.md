@@ -172,7 +172,19 @@ A escolha das tecnologias para o desenvolvimento da API Web foi baseada nos obje
   - Erro (400 Bad Request)
     ```
     {
-      "error": "Email/Usuário já existe"
+      "error": "Email já existe"
+    }
+    ```
+  - Erro (400 Bad Request)
+    ```
+    {
+      "error": "Usuário já existe"
+    }
+    ```
+  - Erro (400 Bad Request)
+    ```
+    {
+      "error": "Preencha todos os campos"
     }
     ```
 
@@ -193,7 +205,13 @@ A escolha das tecnologias para o desenvolvimento da API Web foi baseada nos obje
   - Erro (400 Bad Request)
     ```
     {
-      "error": "Email/Usuário já existe"
+      "error": "Email já existe"
+    }
+    ```
+  - Erro (400 Bad Request)
+    ```
+    {
+      "error": "Usuário já existe"
     }
     ```
 
@@ -233,6 +251,12 @@ A escolha das tecnologias para o desenvolvimento da API Web foi baseada nos obje
     ```
     {
       "error": "Token inválido ou não encontrado"
+    }
+    ```
+  - Erro (500 Internal Server Error)
+    ```
+    {
+      "error": "Erro ao realizar logout"
     }
     ```
 
