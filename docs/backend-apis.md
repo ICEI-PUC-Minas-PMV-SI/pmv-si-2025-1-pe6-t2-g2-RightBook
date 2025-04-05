@@ -204,7 +204,7 @@ A escolha das tecnologias para o desenvolvimento da API Web foi baseada nos obje
   - username: [Nome do usuário]
   - password: [Senha do usuário]
 - Resposta:
-  - Sucesso (201 OK)
+  - Sucesso (200 OK)
     ```
     {
       "token": ""
@@ -214,6 +214,25 @@ A escolha das tecnologias para o desenvolvimento da API Web foi baseada nos obje
     ```
     {
       "error": "Credenciais inválidas"
+    }
+    ```
+
+### Endpoint de logout
+- Método: POST
+- URL: /api/logout/
+- Header:
+  - Authorization: [Token do usuário]
+- Resposta:
+  - Sucesso (200 OK)
+    ```
+    {
+      "message": "Logout realizado com sucesso"
+    }
+    ```
+  - Erro (400 Bad Request)
+    ```
+    {
+      "error": "Token inválido ou não encontrado"
     }
     ```
 
@@ -302,6 +321,12 @@ A escolha das tecnologias para o desenvolvimento da API Web foi baseada nos obje
     ```
     {
       "error": "Pelo menos um parãmetro de busca (titulo, autor, isbn, categoria) é obrigatório."
+    }
+    ```
+  - Erro (404 Not Found)
+    ```
+    {
+      "error": "Nenhum livro encontrado para os parâmetros fornecidos"
     }
     ```
 
