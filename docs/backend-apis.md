@@ -196,9 +196,31 @@ A escolha das tecnologias para o desenvolvimento da API Web foi baseada nos obje
     }
     ```
 
+### Endpoint de listar usuários
+- Método: GET
+- URL: /users/
+- Header:
+  - Authorization: [Token de algum usuário administrador]
+- Resposta:
+  - Sucesso (200 OK)
+    ```
+    {
+      "id": ,
+      "username": "",
+      "email": "",
+      "is_staff": ""
+    }
+    ```
+  - Erro (401 Unauthorized)
+    ```
+    {
+      "detail": "Sem permissão para executar essa acão."
+    }
+    ```
+
 ### Endpoint de buscar um usuário
 - Método: GET
-- URL: /api/search/user
+- URL: /api/search/user/
 - Parâmetros:
   - username: [Nome do usuário]
 - Resposta:
