@@ -580,3 +580,46 @@ Para garantir a estabilidade e o desempenho da aplicação, é essencial configu
       "error": "Nenhum livro encontrado para os parâmetros fornecidor."
     }
     ```
+
+### Teste de busca de avaliacão por livro já avaliados
+- Descrição: Verificar a funcionalidade da busca de avaliacão por livro.
+- Resultado Esperado: Retorno com status "200 OK" e avaliacão do livro.
+
+- Teste realizado:
+  - Entrada:
+    ```
+    {
+      "livro": "DppUEAAAQBAJ"
+    }
+    ```
+  
+  - Resultado (200 OK):
+    ```
+    {
+      "id": 4,
+      "livro": "DppUEAAAQBAJ",
+      "nota": 4,
+      "comentario": "Muito Ruim!",
+      "data_criacao": "2025-04-05T23:45:40.759087Z",
+      "usuario": 2
+    }
+    ```
+
+### Teste de busca de avaliacão por livro não avaliados
+- Descrição: Verificar a funcionalidade da busca de avaliacão por livro.
+- Resultado Esperado: Retorno com status "404 Not Found" e informe de erro.
+
+- Teste realizado:
+  - Entrada:
+    ```
+    {
+      "livro": "Hf_UBQAAQBAJ"
+    }
+    ```
+  
+  - Resultado (404 Not Found):
+    ```
+    {
+      "error": "Nenhuma avaliacão encontrada para este livro"
+    }
+    ```
