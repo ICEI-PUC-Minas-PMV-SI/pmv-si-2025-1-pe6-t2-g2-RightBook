@@ -382,6 +382,30 @@ A escolha das tecnologias para o desenvolvimento da API Web foi baseada nos obje
       ]
     }
     ```
+    
+  ### Endpoint de buscar avaliacões por livro
+- Método: GET
+- URL: /api/search/reviews/books/{livro}
+- Parâmetros:
+  - livro: [ID do livro]
+- Resposta:
+  - Sucesso (200 OK)
+    ```
+    {
+      "id": ,
+      "livro": "",
+      "nota": ,
+      "comentario": "",
+      "data_criacao": "",
+      "usuario": 
+    }
+    ```
+  - Erro (404 Not Found)
+    ```
+    {
+      "error": "Nenhuma avaliacão encontrada para este livro"
+    }
+    ```
 
 ## Considerações de Segurança
 
