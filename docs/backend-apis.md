@@ -196,6 +196,37 @@ A escolha das tecnologias para o desenvolvimento da API Web foi baseada nos obje
     }
     ```
 
+### Endpoint de buscar um usuário
+- Método: GET
+- URL: /api/search/user?username=
+- Parâmetros:
+  - username: [Nome do usuário]
+- Resposta:
+  - Sucesso (200 OK)
+    ```
+    {
+      "id": ,
+      "username": "",
+      "email": "",
+      "data_criacao": "",
+      "ultimo_login": "",
+      
+    }
+    ```
+  - Erro (400 Bad Request)
+    ```
+    {
+      "error": "O parâmetro 'username' é obrigatório."
+    }
+    ```
+    
+  - Erro (400 Not Found)
+    ```
+    {
+      "error": "Usuário não encontrado."
+    }
+    ```
+
 ### Endpoint de buscar um livro
 - Método: GET
 - URL: /api/search-book?titulo=&autor=&isbn=&categoria=
