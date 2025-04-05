@@ -407,8 +407,8 @@ Para garantir a estabilidade e o desempenho da aplicação, é essencial configu
     }
     ```
 
-### Teste de cadastro inválido
-- Descrição: Verificar a funcionalidade do sistema de cadastro de usuário inserindo informações inválidas.
+### Teste de cadastro com campos em branco
+- Descrição: Verificar a funcionalidade do sistema de cadastro de usuário sem inserir todas as informações.
 - Resultado Esperado: Retorno com status "400 Bad Request" e informe de erro.
 
 - Teste realizado:
@@ -429,7 +429,7 @@ Para garantir a estabilidade e o desempenho da aplicação, é essencial configu
     ```
 
 ### Teste de busca de um livro válido
-- Descrição: Verificar a funcionalidade da busca de livros bbuscando um livro válido.
+- Descrição: Verificar a funcionalidade da busca de livros buscando um livro válido.
 - Resultado Esperado: Retorno com status "200 OK" e informacões do livro conforme os parâmetros.
 
 - Teste realizado:
@@ -468,8 +468,8 @@ Para garantir a estabilidade e o desempenho da aplicação, é essencial configu
     }
     ```
 
-### Teste de busca de um livro inválido
-- Descrição: Verificar a funcionalidade da busca de livros buscando um livro inválido.
+### Teste de busca de um livro inexistente
+- Descrição: Verificar a funcionalidade da busca de livros buscando um livro inexistente.
 - Resultado Esperado: Retorno com status "404 Not Found" e informe de erro.
 
 - Teste realizado:
