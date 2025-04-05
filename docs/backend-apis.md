@@ -365,9 +365,8 @@ Para garantir a estabilidade e o desempenho da aplicação, é essencial configu
 4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
 5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
 
-### Cadastro na plataforma
-- Objetivo: Verificar a funcionalidade do sistema de cadastro de usuário.
-- Passos: Enviar uma requisicão POST para o endpoint **/api/register/**.
+### Teste de cadastro válido
+- Descrição: Verificar a funcionalidade do sistema de cadastro de usuário inserindo informações válidas.
 - Resultado Esperado: Retorno com status "201 Created" e token do usuário.
 
 - Teste realizado:
@@ -387,9 +386,29 @@ Para garantir a estabilidade e o desempenho da aplicação, é essencial configu
     }
     ```
 
-### Buscar um livro
-- Objetivo: Verificar a funcionalidade da busca de livros.
-- Passos: Enviar uma requisicão GET para o endpoint **/api/search-book**.
+### Teste de cadastro inválido
+- Descrição: Verificar a funcionalidade do sistema de cadastro de usuário inserindo informações inválidas.
+- Resultado Esperado: Retorno com status "400 Bad Request" e informe de erro.
+
+- Teste realizado:
+  - Entrada:
+    ```
+    {
+      "email": "joao@gmail.com",
+      "username": "",
+      "password": "DQ97DHQDJhkjdg"
+    }
+    ```
+    
+  - Resultado (400 Bad Request):
+    ```
+    {
+      "error": "Preencha todos os campos"
+    }
+    ```
+
+### Teste de busca um livro
+- Descrição: Verificar a funcionalidade da busca de livros.
 - Resultado Esperado: Retorno com status "200 OK" e informacões do livro conforme os parâmetros.
 
 - Teste realizado:
