@@ -623,3 +623,30 @@ Para garantir a estabilidade e o desempenho da aplicação, é essencial configu
       "error": "Nenhuma avaliacão encontrada para este livro"
     }
     ```
+ 
+### Teste de avaliar um livro
+- Descrição: Verificar a funcionalidade de avaliacão de livros.
+- Resultado Esperado: Retorno com status "201 Created" e retorno da avaliacão.
+
+- Teste realizado:
+  - Entrada:
+    ```
+    {
+      "usuario": 2,
+      "livro": "DppUEAAAQBAJ",
+      "nota": 4,
+      "comentario": "Muito Ruim!",
+    }
+    ```
+  
+  - Resultado (201 Created):
+    ```
+    {
+      "id": 4,
+      "livro": "DppUEAAAQBAJ",
+      "nota": 4,
+      "comentario": "Muito Ruim!",
+      "data_criacao": "2025-04-05T23:45:40.759087Z",
+      "usuario": 2
+    }
+    ```
