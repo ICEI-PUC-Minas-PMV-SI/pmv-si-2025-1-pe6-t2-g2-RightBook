@@ -128,32 +128,7 @@ A escolha das tecnologias para o desenvolvimento da API Web foi baseada nos obje
 
 ## API Endpoints
 
-[Liste os principais endpoints da API, incluindo as operações disponíveis, os parâmetros esperados e as respostas retornadas.]
-
-### Endpoint 1
-- Método: GET
-- URL: /endpoint1
-- Parâmetros:
-  - param1: [descrição]
-- Resposta:
-  - Sucesso (200 OK)
-    ```
-    {
-      "message": "Success",
-      "data": {
-        ...
-      }
-    }
-    ```
-  - Erro (4XX, 5XX)
-    ```
-    {
-      "message": "Error",
-      "error": {
-        ...
-      }
-    }
-    ```
+A seguir, constam todos os endpoints para as chamadas da API e seus possíveis resultados.
 
 ### Endpoint de cadastro
 - Método: POST
@@ -451,13 +426,7 @@ Para garantir a estabilidade e o desempenho da aplicação, é essencial configu
 
 ## Testes
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
-
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+Visando cobrir o desenvolvimento da API com os testes necessários, foram realizados testes nas rotas da API em execução local na máquina via Postman.
 
 ### Teste de cadastro válido
 - Descrição: Verificar a funcionalidade do sistema de cadastro de usuário inserindo informações válidas.
