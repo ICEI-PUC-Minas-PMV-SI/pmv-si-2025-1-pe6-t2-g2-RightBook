@@ -8,13 +8,15 @@ A plataforma tem como propósito criar uma plataforma digital dinâmica e de fá
 
 A interface web do RightBook é construída com base na simplicidade, no minimalismo e no alto desempenho. Com uma UI/UX intuitiva e agradável, a plataforma proporciona uma experiência fluida e envolvente, incentivando os usuários a explorar novas leituras, avaliar obras, interagir com comentários de outros leitores e, acima de tudo, estimular o hábito da leitura com mais frequência e qualidade.
 
-### Wireframes
+O processo para o design das telas foi baseado inicialmente na elaboração de wireframes de baixa fidelidade, após foi efetuada a elaboração de telas de alta fidelidade.
 
-![image](https://github.com/user-attachments/assets/9b402bec-d530-46f0-a613-5e10d6970007)
+### Wireframes de baixa fidelidade
 
-![image](https://github.com/user-attachments/assets/c46193aa-f023-4264-8af6-7f57530659fc)
+<img src="https://github.com/user-attachments/assets/9b402bec-d530-46f0-a613-5e10d6970007" alt="Tela principal" width="480">
 
-![image](https://github.com/user-attachments/assets/2a208801-20ed-492e-8872-258cd39eafd9)
+<img src="https://github.com/user-attachments/assets/c46193aa-f023-4264-8af6-7f57530659fc" alt="Modal Cadastro" width="480">
+
+<img src="https://github.com/user-attachments/assets/2a208801-20ed-492e-8872-258cd39eafd9" alt="Modal Cadastro" width="480">
 
 Para mais detalhes acesse nosso figma: https://www.figma.com/design/vtaS4X9kE12mrvjEmYsrj9/RightBook?node-id=24-2&t=dhBfwg9VxeMNJ4EN-4
 
@@ -26,28 +28,28 @@ O estilo visual da interface do RightBook segue uma abordagem minimalista, prior
 
 A fonte utilizada é Roboto, garantindo uma leitura confortável e moderna. As hierarquias tipográficas são bem definidas para proporcionar clareza e organização:
 
-![image](https://github.com/user-attachments/assets/346e3606-080b-4177-a18b-2218c70a9682)
+<img src="https://github.com/user-attachments/assets/346e3606-080b-4177-a18b-2218c70a9682" alt="Tipografia" width="420">
 
 
 🎨 Paleta de Cores
 
 Optamos pela cor amarelo ffc107 como cor primária em contrates com tons escuros de cinza ao preto. A paleta é organizada em três categorias principais:
 
-![image](https://github.com/user-attachments/assets/0acce2d0-4ad5-46bd-abe7-e57ee3eb0de1)
+<img src="https://github.com/user-attachments/assets/0acce2d0-4ad5-46bd-abe7-e57ee3eb0de1" alt="Paleta de cores" width="420">
 
 
 🖌️ Estilos Visuais
 
 A interface utiliza sombras suaves para realçar elementos e criar profundidade:
 
-![image](https://github.com/user-attachments/assets/2a907309-03f3-4214-94da-405174fa1684)
+<img src="https://github.com/user-attachments/assets/2a907309-03f3-4214-94da-405174fa1684" alt="linhas e sombreamento" width="160">
 
 
 📏 Espaçamento e Grid
 
 O layout segue a metologia de 4pt grid, garantindo consistência no espaçamento e na organização dos componentes.
 
-![image](https://github.com/user-attachments/assets/fa235182-cd2c-4c3c-a90a-e5f03f1cb5dc)
+<img src="https://github.com/user-attachments/assets/fa235182-cd2c-4c3c-a90a-e5f03f1cb5dc" alt="linhas e sombreamento" width="420">
 
 
 🧩 Componentes Criados
@@ -58,7 +60,7 @@ Para garantir um design consistente e reutilizável, foram desenvolvidos diverso
 
 Os botões seguem a paleta de cores e tipografia definidas, garantindo acessibilidade e destaque nas interações. Foram criadas variações como:
 
-![image](https://github.com/user-attachments/assets/6e3caa3d-c816-48d7-ab5e-ec4d83d205e3)
+<img src="https://github.com/user-attachments/assets/6e3caa3d-c816-48d7-ab5e-ec4d83d205e3" alt="botões" width="320">
 
 Os botões possuem estados de hover, focused e disabled, além de suporte para ícones.
 
@@ -66,13 +68,13 @@ Os botões possuem estados de hover, focused e disabled, além de suporte para �
 
 Campos de entrada estilizados para diferentes necessidades, como:
 
-![image](https://github.com/user-attachments/assets/a6a7c82f-cb96-41f0-b9e2-ac7852542e25)
+<img src="https://github.com/user-attachments/assets/a6a7c82f-cb96-41f0-b9e2-ac7852542e25" alt="estilo do botões" width="320">
 
 🔗 Link
 
 Os links seguem a identidade visual, utilizando a cor azul (#589ED6) para indicar interatividade.
 
-![image](https://github.com/user-attachments/assets/23a55005-f6a3-403b-9fc8-dfa900e81110)
+<img src="https://github.com/user-attachments/assets/23a55005-f6a3-403b-9fc8-dfa900e81110" alt="inputs de texto" width="180">
 
 👤 Avatar
 
@@ -82,14 +84,13 @@ Formato circular para melhor adaptação.
 
 Fallback de imagem caso o usuário não tenha foto.
 
-![image](https://github.com/user-attachments/assets/0f8cdd10-b4c5-4562-9f36-e524127641ad)
+<img src="https://github.com/user-attachments/assets/0f8cdd10-b4c5-4562-9f36-e524127641ad" alt="avatar" width="180">
 
 ⭐ Star Rating
 
 Sistema de avaliação baseado em estrelas, utilizado para feedback e classificações:
 
-![image](https://github.com/user-attachments/assets/e486f0cf-1765-45b8-870f-4efb022e1e56)
-
+<img src="https://github.com/user-attachments/assets/e486f0cf-1765-45b8-870f-4efb022e1e56" alt="estrelas de avaliação" width="120">
 
 💬 Modal
 
@@ -115,8 +116,7 @@ Botão de ação.
 
 Diagrama de telas e fluxo na aplicação.
 
-![image](https://github.com/user-attachments/assets/eb98a4ce-21e2-4c9a-b7a6-80244ae5c770)
-
+<img src="https://github.com/user-attachments/assets/eb98a4ce-21e2-4c9a-b7a6-80244ae5c770" alt="fluxo de telas" width="420">
 
 ## Tecnologias Utilizadas
 
