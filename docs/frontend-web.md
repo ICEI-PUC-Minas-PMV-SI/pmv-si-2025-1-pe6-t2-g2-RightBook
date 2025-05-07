@@ -12,11 +12,31 @@ O processo para o design das telas foi baseado inicialmente na elaboração de w
 
 ### Wireframes de baixa fidelidade
 
-<img src="https://github.com/user-attachments/assets/9b402bec-d530-46f0-a613-5e10d6970007" alt="Tela principal" width="480">
+Tela principal com modal de cadastro
 
-<img src="https://github.com/user-attachments/assets/c46193aa-f023-4264-8af6-7f57530659fc" alt="Modal Cadastro" width="480">
+<img src="https://github.com/user-attachments/assets/9b402bec-d530-46f0-a613-5e10d6970007" alt="Tela principal" width="420">
 
-<img src="https://github.com/user-attachments/assets/2a208801-20ed-492e-8872-258cd39eafd9" alt="Modal Cadastro" width="480">
+Tela principal logado
+
+<img src="https://github.com/user-attachments/assets/c46193aa-f023-4264-8af6-7f57530659fc" alt="Modal Cadastro" width="420">
+
+Tela de detalhe de livro
+
+<img src="https://github.com/user-attachments/assets/2a208801-20ed-492e-8872-258cd39eafd9" alt="Modal Cadastro" width="420">
+
+### Wireframes de alta fidelidade
+
+Tela Principal
+
+<img src="https://github.com/user-attachments/assets/2990f33a-bfc1-4f03-bef8-198ccaa254cb" alt="Tela principal de alta fidelidade" width="420">
+
+Tela Principal com modal de login
+
+<img src="https://github.com/user-attachments/assets/c31d087f-a590-4c16-958c-732e72a9c604" alt="Tela principal de alta fidelidade login" width="420">
+
+Tela de detalhe do livro
+
+<img src="https://github.com/user-attachments/assets/b6911cf8-efe9-449c-bdf5-13b36dd26f6e" alt="Tela principal de alta fidelidade detalhe" width="420">
 
 Para mais detalhes acesse nosso figma: https://www.figma.com/design/vtaS4X9kE12mrvjEmYsrj9/RightBook?node-id=24-2&t=dhBfwg9VxeMNJ4EN-4
 
@@ -35,7 +55,7 @@ A fonte utilizada é Roboto, garantindo uma leitura confortável e moderna. As h
 
 Optamos pela cor amarelo ffc107 como cor primária em contrates com tons escuros de cinza ao preto. A paleta é organizada em três categorias principais:
 
-<img src="https://github.com/user-attachments/assets/0acce2d0-4ad5-46bd-abe7-e57ee3eb0de1" alt="Paleta de cores" width="420">
+<img src="https://github.com/user-attachments/assets/0acce2d0-4ad5-46bd-abe7-e57ee3eb0de1" alt="Paleta de cores" width="360">
 
 
 🖌️ Estilos Visuais
