@@ -178,11 +178,11 @@ As dependências da aplicação serão mantidas atualizadas, garantindo que bibl
 
 ## Implantação
 
-### 1. Requisitos de Hardware e Software
+### Requisitos de Hardware e Software
 
 A aplicação foi desenvolvida utilizando o framework **Next.js**, que requer **Node.js** e o gerenciador de pacotes npm. Ao utilizar a plataforma **Vercel**, não é necessário provisionar infraestrutura manualmente, pois a hospedagem é baseada em **funções serverless** e uma **CDN global**. As dependências da aplicação são gerenciadas automaticamente com base no arquivo `package.json`.
 
-### 2. Plataforma de hospedagem
+### Plataforma de hospedagem
 
 A **Vercel** foi escolhida como plataforma de hospedagem por oferecer:
 - Suporte nativo e otimizado para **Next.js**
@@ -190,21 +190,21 @@ A **Vercel** foi escolhida como plataforma de hospedagem por oferecer:
 - Pré-visualizações automáticas de pull requests
 - Escalabilidade automática e distribuição global via CDN
 
-### 3. Configuração do ambiente de implantação
+### Configuração do ambiente de implantação
 
 O processo de configuração é efetuado via interface web da Vercel:
 - Conexão do repositório Git ao Vercel
 - Detecção automática da estrutura Next.js
 - Instalação automatizada de dependências durante o processo de build
 
-### 4. Deploy da aplicação
+### Deploy da aplicação
 
 A implantação é acionada automaticamente após a importação do repositório. A cada novo commit na branch principal, o Vercel realiza:
 - Build da aplicação
 - Publicação em ambiente de produção
 - Geração de URLs de preview para branches de desenvolvimento
 
-### 5. Aplicação em produção
+### Aplicação em produção
 
 Após o deploy, a aplicação está disponibilizada na URL (`https://XXXXXXXX.vercel.app`).
 
