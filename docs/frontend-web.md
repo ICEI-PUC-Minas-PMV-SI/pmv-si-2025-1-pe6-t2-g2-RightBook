@@ -222,74 +222,75 @@ Após o deploy, a aplicação está disponibilizada na URL (`https://XXXXXXXX.ve
 ### Casos de teste:
 
 ### 1. Cadastro:
-#### Objetivo:
+#### Objetivo: Permitir que o usuário se cadastre na plataforma.
 #### Passos:
 | **Passo** | **Descrição**                                                                 |
 |-----------|-------------------------------------------------------------------------------|
-| 1         ||
-| 2         ||
-| 3         ||
+| 1         | Acessar a página de login |
+| 2         | Acessar o direcionamento de "Não possui cadastro" |
+| 3         | Preencher todas as informações solicitadas pelo formulário |
 
 #### Resultados:
 | **Resultado Esperado**                                     | **Resultado Real**                                                                      |
 |------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-|||
+| Quando o usuário preencher os campos do formulário, essas informações serão enviadas à rota /api/register/. Caso o cadastro seja válido, o usuário será redirecionado à página de login. ||
 
 ### 2. Login:
-#### Objetivo:
+#### Objetivo: Permitir que o usuário realize login na plataforma.
 #### Passos:
 | **Passo** | **Descrição**                                                                 |
 |-----------|-------------------------------------------------------------------------------|
-| 1         ||
-| 2         ||
-| 3         ||
+| 1         | Acessar a página de login |
+| 2         | Preencher todas as informações solicitadas pelo formulário |
 
 #### Resultados:
 | **Resultado Esperado**                                     | **Resultado Real**                                                                      |
 |------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-|||
+| Quando o usuário preencher os campos de e-mail e senha, essas informações serão enviadas à rota /api/login/. Caso a autenticação seja válida, o usuário será redirecionado à página Home. ||
 
 ### 3. Buscar um livro:
-#### Objetivo:
+#### Objetivo: Permitir que o usuário faça busca dos livros na plataforma.
 #### Passos:
 | **Passo** | **Descrição**                                                                 |
 |-----------|-------------------------------------------------------------------------------|
-| 1         ||
-| 2         ||
-| 3         ||
+| 1         | Acessar a página de login |
+| 2         | Fazer o login na plataforma |
+| 3         | Realizar a busca do livro |
 
 #### Resultados:
 | **Resultado Esperado**                                     | **Resultado Real**                                                                      |
 |------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-|||
+| Quando o usuário preencher o campo de busca, essas informações serão enviadas à rota /api/search-book. Caso a busca seja válida, o usuário será redirecionado à página do livro. ||
 
 ### 4. Avaliar um livro:
-#### Objetivo:
+#### Objetivo: Permitir que o usuário avalie os livros que leu.
 #### Passos:
 | **Passo** | **Descrição**                                                                 |
 |-----------|-------------------------------------------------------------------------------|
-| 1         ||
-| 2         ||
-| 3         ||
+| 1         | Acessar a página de login |
+| 2         | Fazer o login na plataforma |
+| 3         | Realizar a busca do livro |
+| 4         | Avaliar o livro |
 
 #### Resultados:
 | **Resultado Esperado**                                     | **Resultado Real**                                                                      |
 |------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-|||
+| Quando o usuário acessar a página de um livro e realizar a avaliação, essas informações serão enviadas à rota /reviews/. Caso bem sucedido, a avaliação estará disponível na página do livro. ||
 
 ### 5. Adicionar um livro na lista de desejos:
-#### Objetivo:
+#### Objetivo: Permitir que o usuário adicione livros à sua lista de desejos.
 #### Passos:
 | **Passo** | **Descrição**                                                                 |
 |-----------|-------------------------------------------------------------------------------|
-| 1         ||
-| 2         ||
-| 3         ||
+| 1         | Acessar a página de login |
+| 2         | Fazer o login na plataforma |
+| 3         | Realizar a busca do livro |
+| 4         | Adicionar a lista de desejos |
 
 #### Resultados:
 | **Resultado Esperado**                                     | **Resultado Real**                                                                      |
 |------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-|||
+| Quando o usuário acessar a página de um livro e adicionar a lista de desejos, essas informações serão enviadas à rota /wish_list/. Caso bem sucedido, o livro estará disponível na lista de desejos do usuário.||
 
 # Referências
 
