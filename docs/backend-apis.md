@@ -430,14 +430,15 @@ Visando cobrir o desenvolvimento da API com os testes necessários, foram realiz
 
 ### Teste de cadastro válido
 - Descrição: Verificar a funcionalidade do sistema de cadastro de usuário inserindo informações válidas.
+- URL: /api/register/
 - Resultado Esperado: Retorno com status "201 Created" e token do usuário.
 
 - Teste realizado:
   - Entrada:
     ```
     {
-      "email": "mauricio@gmail.com",
-      "username": "mauricio",
+      "email": "mauricioq@gmail.com",
+      "username": "mauricioq",
       "password": "7DQ70HDQWD56qwdq7"
     }
     ```
@@ -445,20 +446,24 @@ Visando cobrir o desenvolvimento da API com os testes necessários, foram realiz
   - Resultado (201 Created):
     ```
     {
-      "token": "e66c46c2505ec8d33150ce3a9f169252f6306164"
+      "token": "f09a3e9c6067659f2ed9ec1e4c486bcd5e142741"
     }
     ```
+    
+    ![image](https://github.com/user-attachments/assets/65cd8c87-5ca1-4779-bd1d-e3882d515873)
+
 
 ### Teste de cadastro duplicado
 - Descrição: Verificar a funcionalidade do sistema de cadastro de usuário inserindo informações de usuários já existentes.
+- URL: /api/register/
 - Resultado Esperado: Retorno com status "400 Bad Request" e informe do erro.
 
 - Teste realizado:
   - Entrada:
     ```
     {
-      "email": "mauricio@gmail.com",
-      "username": "mauricio",
+      "email": "mauricio2@gmail.com",
+      "username": "mauricio2",
       "password": "7DQ70HDQWD56qwdq7"
     }
     ```
@@ -469,9 +474,13 @@ Visando cobrir o desenvolvimento da API com os testes necessários, foram realiz
       "error": "Email já existe"
     }
     ```
+    
+    ![image](https://github.com/user-attachments/assets/bc84d9f7-8838-4a70-b875-2bfafef14772)
+
 
 ### Teste de cadastro com campos em branco
 - Descrição: Verificar a funcionalidade do sistema de cadastro de usuário sem inserir todas as informações.
+- URL: /api/register/
 - Resultado Esperado: Retorno com status "400 Bad Request" e informe de erro.
 
 - Teste realizado:
@@ -491,8 +500,12 @@ Visando cobrir o desenvolvimento da API com os testes necessários, foram realiz
     }
     ```
 
+    ![image](https://github.com/user-attachments/assets/3aa95028-3ed4-42d2-ae30-ae31f2c2046d)
+
+
 ### Teste de busca de um livro válido
 - Descrição: Verificar a funcionalidade da busca de livros buscando um livro válido.
+- URL: /api/search-book
 - Resultado Esperado: Retorno com status "200 OK" e informacões do livro conforme os parâmetros.
 
 - Teste realizado:
@@ -531,8 +544,12 @@ Visando cobrir o desenvolvimento da API com os testes necessários, foram realiz
     }
     ```
 
+    ![image](https://github.com/user-attachments/assets/41ec3f61-2a6b-4b5c-8c60-2cccb93bc8b2)
+
+
 ### Teste de busca de um livro inexistente
 - Descrição: Verificar a funcionalidade da busca de livros buscando um livro inexistente.
+- URL: /api/search-book
 - Resultado Esperado: Retorno com status "404 Not Found" e informe de erro.
 
 - Teste realizado:
@@ -550,8 +567,12 @@ Visando cobrir o desenvolvimento da API com os testes necessários, foram realiz
     }
     ```
 
+    ![image](https://github.com/user-attachments/assets/904ad7cc-af99-4586-ac59-a63a2db0ac5b)
+
+
 ### Teste de busca de avaliacão por livro já avaliados
 - Descrição: Verificar a funcionalidade da busca de avaliacão por livro.
+- URL: /api/search/reviews/books/{livro}
 - Resultado Esperado: Retorno com status "200 OK" e avaliacão do livro.
 
 - Teste realizado:
@@ -565,17 +586,21 @@ Visando cobrir o desenvolvimento da API com os testes necessários, foram realiz
   - Resultado (200 OK):
     ```
     {
-      "id": 4,
+      "id": 21,
       "livro": "DppUEAAAQBAJ",
       "nota": 4,
       "comentario": "Muito Ruim!",
-      "data_criacao": "2025-04-05T23:45:40.759087Z",
+      "data_criacao": "2025-05-10T02:47:46.473303Z",
       "usuario": 2
     }
     ```
 
+    ![image](https://github.com/user-attachments/assets/9fe3bb13-5071-42ed-af55-c57278309702)
+
+
 ### Teste de busca de avaliacão por livro não avaliados
 - Descrição: Verificar a funcionalidade da busca de avaliacão por livro.
+- URL: /api/search/reviews/books/{livro}
 - Resultado Esperado: Retorno com status "404 Not Found" e informe de erro.
 
 - Teste realizado:
@@ -592,9 +617,13 @@ Visando cobrir o desenvolvimento da API com os testes necessários, foram realiz
       "error": "Nenhuma avaliacão encontrada para este livro"
     }
     ```
- 
+
+    ![image](https://github.com/user-attachments/assets/57785533-d729-4485-957e-87d8bccdaf43)
+
+
 ### Teste de avaliar um livro
 - Descrição: Verificar a funcionalidade de avaliacão de livros.
+- URL: /reviews/
 - Resultado Esperado: Retorno com status "201 Created" e retorno da avaliacão.
 
 - Teste realizado:
@@ -611,11 +640,14 @@ Visando cobrir o desenvolvimento da API com os testes necessários, foram realiz
   - Resultado (201 Created):
     ```
     {
-      "id": 4,
+      "id": 21,
       "livro": "DppUEAAAQBAJ",
       "nota": 4,
       "comentario": "Muito Ruim!",
-      "data_criacao": "2025-04-05T23:45:40.759087Z",
+      "data_criacao": "2025-05-10T02:47:46.473303Z",
       "usuario": 2
     }
     ```
+
+    ![image](https://github.com/user-attachments/assets/cb12d24c-116f-45f7-af91-f1c7e2d8b4cf)
+
