@@ -226,14 +226,15 @@ Após o deploy, a aplicação está disponibilizada na URL (`https://XXXXXXXX.ve
 #### Passos:
 | **Passo** | **Descrição**                                                                 |
 |-----------|-------------------------------------------------------------------------------|
-| 1         | Acessar a página de login |
-| 2         | Acessar o direcionamento de "Não possui cadastro" |
-| 3         | Preencher todas as informações solicitadas pelo formulário |
+| 1         | Acessar a página de cadastro |
+| 2         | Preencher todas as informações solicitadas pelo formulário |
 
 #### Resultados:
-| **Resultado Esperado**                                     | **Resultado Real**                                                                      |
-|------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| Quando o usuário preencher os campos do formulário, essas informações serão enviadas à rota /api/register/. Caso o cadastro seja válido, o usuário será redirecionado à página de login. ||
+**Resultado esperado:** Quando o usuário preencher os campos do formulário, essas informações serão enviadas à rota /api/register/. Caso o cadastro seja válido, o usuário será redirecionado à página Home.
+
+**Resultado real:**
+
+[Cadastro](https://github.com/user-attachments/assets/626316ca-c2e8-4a87-b1e4-fc37151ffe90)
 
 ### 2. Login:
 #### Objetivo: Permitir que o usuário realize login na plataforma.
@@ -244,11 +245,30 @@ Após o deploy, a aplicação está disponibilizada na URL (`https://XXXXXXXX.ve
 | 2         | Preencher todas as informações solicitadas pelo formulário |
 
 #### Resultados:
-| **Resultado Esperado**                                     | **Resultado Real**                                                                      |
-|------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| Quando o usuário preencher os campos de e-mail e senha, essas informações serão enviadas à rota /api/login/. Caso a autenticação seja válida, o usuário será redirecionado à página Home. ||
+**Resultado Esperado:** Quando o usuário preencher os campos de e-mail e senha, essas informações serão enviadas à rota /api/login/. Caso a autenticação seja válida, o usuário será redirecionado à página Home.
 
-### 3. Buscar um livro:
+**Resultado real:**
+
+[Login](https://github.com/user-attachments/assets/f51fed6b-787d-4182-8830-08db796b4230)
+
+### 3. Logout:
+#### Objetivo: Permitir que o usuário realize login na plataforma.
+#### Passos:
+| **Passo** | **Descrição**                                                                 |
+|-----------|-------------------------------------------------------------------------------|
+| 1         | Acessar a página de login |
+| 2         | Fazer o login na plataforma |
+| 3         | Acessar o menu do usuário |
+| 4         | Apertar em "sair" |
+
+#### Resultados:
+**Resultado Esperado:** Ao acessar o menu do usuário e apertar no botão "Sair" a rota /api/logout/ será acionada. Caso bem sucedido o usuário se desconectará da plataforma.
+
+**Resultado real:**
+
+[Logout](https://github.com/user-attachments/assets/90492580-88f0-458d-a121-d5b0daf109aa)
+
+### 4. Buscar um livro:
 #### Objetivo: Permitir que o usuário faça busca dos livros na plataforma.
 #### Passos:
 | **Passo** | **Descrição**                                                                 |
@@ -258,11 +278,13 @@ Após o deploy, a aplicação está disponibilizada na URL (`https://XXXXXXXX.ve
 | 3         | Realizar a busca do livro |
 
 #### Resultados:
-| **Resultado Esperado**                                     | **Resultado Real**                                                                      |
-|------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| Quando o usuário preencher o campo de busca, essas informações serão enviadas à rota /api/search-book. Caso a busca seja válida, o usuário será redirecionado à página do livro. ||
+**Resultado Esperado:** Quando o usuário preencher o campo de busca, essas informações serão enviadas à rota /api/search-book. Caso a busca seja válida, o usuário será redirecionado à página do livro.
 
-### 4. Avaliar um livro:
+**Resultado real:**
+
+[Busca](https://github.com/user-attachments/assets/fda35326-69b4-44c0-84dd-e4ec5661c1a7)
+
+### 5. Avaliar um livro:
 #### Objetivo: Permitir que o usuário avalie os livros que leu.
 #### Passos:
 | **Passo** | **Descrição**                                                                 |
@@ -273,11 +295,13 @@ Após o deploy, a aplicação está disponibilizada na URL (`https://XXXXXXXX.ve
 | 4         | Avaliar o livro |
 
 #### Resultados:
-| **Resultado Esperado**                                     | **Resultado Real**                                                                      |
-|------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| Quando o usuário acessar a página de um livro e realizar a avaliação, essas informações serão enviadas à rota /reviews/. Caso bem sucedido, a avaliação estará disponível na página do livro. ||
+**Resultado Esperado:** Quando o usuário acessar a página de um livro e realizar a avaliação, essas informações serão enviadas à rota /reviews/. Caso bem sucedido, a avaliação estará disponível na página do livro.
 
-### 5. Adicionar um livro na lista de desejos:
+**Resultado real:**
+
+[Avaliar](https://github.com/user-attachments/assets/8a4ee3c2-3b5f-439a-beef-21fae90b41b1)
+
+### 6. Adicionar um livro na lista de desejos:
 #### Objetivo: Permitir que o usuário adicione livros à sua lista de desejos.
 #### Passos:
 | **Passo** | **Descrição**                                                                 |
@@ -288,9 +312,11 @@ Após o deploy, a aplicação está disponibilizada na URL (`https://XXXXXXXX.ve
 | 4         | Adicionar a lista de desejos |
 
 #### Resultados:
-| **Resultado Esperado**                                     | **Resultado Real**                                                                      |
-|------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| Quando o usuário acessar a página de um livro e adicionar a lista de desejos, essas informações serão enviadas à rota /wish_list/. Caso bem sucedido, o livro estará disponível na lista de desejos do usuário.||
+**Resultado Esperado:** Quando o usuário acessar a página de um livro e adicionar a lista de desejos, essas informações serão enviadas à rota /wish_list/. Caso bem sucedido, o livro estará disponível na lista de desejos do usuário.
+
+**Resultado real:**
+
+[Lista de desejos](https://github.com/user-attachments/assets/fd1c1e3d-66aa-4bba-bdb6-f9de0ef0bcaa)
 
 # Referências
 
