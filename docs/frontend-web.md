@@ -219,6 +219,78 @@ Após o deploy, a aplicação está disponibilizada na URL (`https://XXXXXXXX.ve
 4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
 5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
 
+### Casos de teste:
+
+### 1. Cadastro:
+#### Objetivo:
+#### Passos:
+| **Passo** | **Descrição**                                                                 |
+|-----------|-------------------------------------------------------------------------------|
+| 1         ||
+| 2         ||
+| 3         ||
+
+#### Resultados:
+| **Resultado Esperado**                                     | **Resultado Real**                                                                      |
+|------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+|||
+
+### 2. Login:
+#### Objetivo:
+#### Passos:
+| **Passo** | **Descrição**                                                                 |
+|-----------|-------------------------------------------------------------------------------|
+| 1         ||
+| 2         ||
+| 3         ||
+
+#### Resultados:
+| **Resultado Esperado**                                     | **Resultado Real**                                                                      |
+|------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+|||
+
+### 3. Buscar um livro:
+#### Objetivo:
+#### Passos:
+| **Passo** | **Descrição**                                                                 |
+|-----------|-------------------------------------------------------------------------------|
+| 1         ||
+| 2         ||
+| 3         ||
+
+#### Resultados:
+| **Resultado Esperado**                                     | **Resultado Real**                                                                      |
+|------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+|||
+
+### 4. Avaliar um livro:
+#### Objetivo:
+#### Passos:
+| **Passo** | **Descrição**                                                                 |
+|-----------|-------------------------------------------------------------------------------|
+| 1         ||
+| 2         ||
+| 3         ||
+
+#### Resultados:
+| **Resultado Esperado**                                     | **Resultado Real**                                                                      |
+|------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+|||
+
+### 5. Adicionar um livro na lista de desejos:
+#### Objetivo:
+#### Passos:
+| **Passo** | **Descrição**                                                                 |
+|-----------|-------------------------------------------------------------------------------|
+| 1         ||
+| 2         ||
+| 3         ||
+
+#### Resultados:
+| **Resultado Esperado**                                     | **Resultado Real**                                                                      |
+|------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+|||
+
 # Referências
 
 Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
