@@ -211,13 +211,7 @@ Após o deploy, a aplicação está disponibilizada na URL (`https://XXXXXXXX.ve
 
 ## Testes
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
-
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+Foram realizados teste manuais para garantir a funcionabilidade da plataforma.
 
 ### Casos de teste:
 
@@ -236,6 +230,14 @@ Após o deploy, a aplicação está disponibilizada na URL (`https://XXXXXXXX.ve
 
 [Cadastro](https://github.com/user-attachments/assets/626316ca-c2e8-4a87-b1e4-fc37151ffe90)
 
+### 1.1 Cadastro inválido:
+#### Resultados:
+**Resultado esperado:** Quando o usuário tentar se cadastrar na plataforma sem preencher todas os campos do formulário, deverá aparecer uma mensagem de erro indicando que é obrigatório o preenchimento do campo.
+
+**Resultado real:**
+
+![Cadastro inválido](https://github.com/user-attachments/assets/d0c86e58-061a-42dd-9f7c-4a241b2bc4e4)
+
 ### 2. Login:
 #### Objetivo: Permitir que o usuário realize login na plataforma.
 #### Passos:
@@ -250,6 +252,14 @@ Após o deploy, a aplicação está disponibilizada na URL (`https://XXXXXXXX.ve
 **Resultado real:**
 
 [Login](https://github.com/user-attachments/assets/f51fed6b-787d-4182-8830-08db796b4230)
+
+### 2.1 Login com credenciais incorretas:
+#### Resultados:
+**Resultado Esperado:** Quando o usuário tentar realizar login com credenciais inválidas, o formulário apresentará a seguinte mensagem de erro: "Email ou senha incorretos".
+
+**Resultado real:**
+
+![Login incorreto](https://github.com/user-attachments/assets/64e75a40-2a2c-4d66-b157-9d598af9682f)
 
 ### 3. Logout:
 #### Objetivo: Permitir que o usuário realize login na plataforma.
