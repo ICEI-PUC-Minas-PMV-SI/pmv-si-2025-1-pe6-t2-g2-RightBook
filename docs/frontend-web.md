@@ -281,7 +281,7 @@ Foram realizados teste manuais para garantir a funcionabilidade da plataforma.
 | 2         | Preencher todas as informações solicitadas pelo formulário |
 
 #### Resultados:
-**Resultado esperado:** Quando o usuário preencher os campos do formulário, essas informações serão enviadas à rota /api/register/. Caso o cadastro seja válido, o usuário será redirecionado à página Home.
+**Resultado esperado:** Quando o usuário preeencher todos os campos do formulário, essas informações serão processadas. Caso o cadastro seja válido, o usuário será redirecionado à página Home.
 
 **Resultado real:**
 
@@ -304,7 +304,7 @@ Foram realizados teste manuais para garantir a funcionabilidade da plataforma.
 | 2         | Preencher todas as informações solicitadas pelo formulário |
 
 #### Resultados:
-**Resultado Esperado:** Quando o usuário preencher os campos de e-mail e senha, essas informações serão enviadas à rota /api/login/. Caso a autenticação seja válida, o usuário será redirecionado à página Home.
+**Resultado Esperado:** Quando o usuário preencher os campos do formulário, essas informações serão processadas. Se a autenticação for válida, o usuário será redirecionado para a página Home.
 
 **Resultado real:**
 
@@ -329,7 +329,7 @@ Foram realizados teste manuais para garantir a funcionabilidade da plataforma.
 | 4         | Apertar em "sair" |
 
 #### Resultados:
-**Resultado Esperado:** Ao acessar o menu do usuário e apertar no botão "Sair" a rota /api/logout/ será acionada. Caso bem sucedido o usuário se desconectará da plataforma.
+**Resultado Esperado:** Ao acessar o menu do usuário e apertar o botão "Sair", o sistema executará o processo de logout. Se a ação for bem-sucedida, o usuário será desconectado da plataforma.
 
 **Resultado real:**
 
@@ -345,7 +345,7 @@ Foram realizados teste manuais para garantir a funcionabilidade da plataforma.
 | 3         | Realizar a busca do livro |
 
 #### Resultados:
-**Resultado Esperado:** Quando o usuário preencher o campo de busca, essas informações serão enviadas à rota /api/search-book. Caso a busca seja válida, o usuário será redirecionado à página do livro.
+**Resultado Esperado:** Quando o usuário preencher o campo de busca, essas informações serão processadas. Se a busca for válida, o usuário será redirecionado para a página do livro.
 
 **Resultado real:**
 
@@ -362,7 +362,7 @@ Foram realizados teste manuais para garantir a funcionabilidade da plataforma.
 | 4         | Avaliar o livro |
 
 #### Resultados:
-**Resultado Esperado:** Quando o usuário acessar a página de um livro e realizar a avaliação, essas informações serão enviadas à rota /reviews/. Caso bem sucedido, a avaliação estará disponível na página do livro.
+**Resultado Esperado:** Quando o usuário acessar a página de um livro e realizar a avaliação, essas informações serão processadas. Se a ação for bem-sucedida, a avaliação ficará disponível na página do livro.
 
 **Resultado real:**
 
@@ -379,7 +379,7 @@ Foram realizados teste manuais para garantir a funcionabilidade da plataforma.
 | 4         | Adicionar a lista de desejos |
 
 #### Resultados:
-**Resultado Esperado:** Quando o usuário acessar a página de um livro e adicionar a lista de desejos, essas informações serão enviadas à rota /wish_list/. Caso bem sucedido, o livro estará disponível na lista de desejos do usuário.
+**Resultado Esperado:** Quando o usuário acessar a página de um livro e adicioná-lo à lista de desejos, essas informações serão processadas. Se a ação for bem-sucedida, o livro ficará disponível na lista de desejos do usuário.
 
 **Resultado real:**
 
