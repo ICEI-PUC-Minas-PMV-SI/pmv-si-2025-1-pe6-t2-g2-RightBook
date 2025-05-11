@@ -176,7 +176,64 @@ Também será implementado um sistema de logout seguro, revogando tokens sempre 
 
 As dependências da aplicação serão mantidas atualizadas, garantindo que bibliotecas e pacotes estejam sempre nas versões mais seguras.
 
-## Implantação
+## Implantação Backend
+
+### Requisitos de Hardware e Software
+
+A aplicação **RightBook** é uma API RESTful desenvolvida com **Django 5.1+** e **Django REST Framework**, utilizando **PostgreSQL** como banco de dados e integração com a **Google Books API**.
+
+### Execução Local
+
+- Python 3.11+
+- PostgreSQL 14+
+- Sistema operacional Linux, macOS ou Windows
+- pip e virtualenv
+- Acesso à internet
+
+### Execução com Docker
+
+- Docker 20.10+
+- Docker Compose 2.0+
+
+### Plataforma de Hospedagem
+
+A aplicação será hospedada em provedores AWS com uso da solução da Supabase (SaaS)
+
+### Configuração do Ambiente de Implantação
+
+#### Implantação com Docker
+
+1. **Clonar o repositório:**
+
+   ```bash
+   git clone https://github.com/yohangreg/back_end_right_book.git
+   cd back_end_right_book
+   ```
+
+2. **Criar o arquivo `.env`:**
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   Edite o arquivo com suas configurações de ambiente, incluindo:
+
+   - Variáveis do banco de dados
+   - Chave da Google Books API
+   - Django secret key
+
+3. **Build e execução dos containers:**
+
+   ```bash
+   docker-compose up --build
+   ```
+
+   Para ambiente de testes aplicação estará acessível em: http://0.0.0.0:8000
+   
+---
+
+
+## Implantação Frontend
 
 ### Requisitos de Hardware e Software
 
