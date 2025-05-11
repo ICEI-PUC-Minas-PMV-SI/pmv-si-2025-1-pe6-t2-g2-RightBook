@@ -385,6 +385,4 @@ Foram realizados teste manuais para garantir a funcionabilidade da plataforma.
 
 [Lista de desejos](https://github.com/user-attachments/assets/fd1c1e3d-66aa-4bba-bdb6-f9de0ef0bcaa)
 
-# Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
