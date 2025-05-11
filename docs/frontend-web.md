@@ -261,9 +261,9 @@ A implantação é acionada automaticamente após a importação do repositório
 - Publicação em ambiente de produção
 - Geração de URLs de preview para branches de desenvolvimento
 
-### Aplicação em produção
+### Aplicação em produção local
 
-Após o deploy, a aplicação está disponibilizada na URL (`https://XXXXXXXX.vercel.app`).
+Após o deploy, a aplicação está disponibilizada na URL (http://localhost:3000).
 
 
 ## Testes
