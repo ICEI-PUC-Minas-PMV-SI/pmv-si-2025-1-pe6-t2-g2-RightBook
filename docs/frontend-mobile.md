@@ -127,7 +127,9 @@ Sistema de avaliação baseado em estrelas, utilizado para feedback e classifica
 
 ## Fluxo de Dados
 
-![image](https://github.com/user-attachments/assets/d19bc183-cb7d-4531-97b0-2f0e0bb05a23)
+Diagrama de telas e fluxo na aplicação.
+
+<img src="https://github.com/user-attachments/assets/eb98a4ce-21e2-4c9a-b7a6-80244ae5c770" alt="fluxo de telas" width="420">
 
 ## Tecnologias Utilizadas
 
