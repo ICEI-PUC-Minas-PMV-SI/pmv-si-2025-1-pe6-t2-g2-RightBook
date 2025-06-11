@@ -240,13 +240,100 @@ Após o deploy, a aplicação está disponibilizada na URL na versão web (http:
 
 ## Testes
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
+Foram realizados teste manuais para garantir a funcionabilidade da plataforma.
 
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+### Casos de teste:
+
+### 1. Cadastro:
+#### Objetivo: Permitir que o usuário se cadastre na plataforma.
+#### Passos:
+| **Passo** | **Descrição**                                                                 |
+|-----------|-------------------------------------------------------------------------------|
+| 1         | Acessar o app |
+| 2         | Acessar a tela de cadastro |
+| 3         | Preencher todas as informações solicitadas pelo formulário |
+
+#### Resultados:
+**Resultado esperado:** Quando o usuário preeencher todos os campos do formulário, essas informações serão processadas. Caso o cadastro seja válido, o usuário será redirecionado à página Home.
+
+**Resultado real:**
+
+### 1.1 Cadastro inválido:
+#### Resultados:
+**Resultado esperado:** Quando o usuário tentar se cadastrar na plataforma sem preencher todas os campos do formulário, deverá aparecer uma mensagem de erro indicando que é obrigatório o preenchimento do campo.
+
+**Resultado real:**
+
+### 2. Login:
+#### Objetivo: Permitir que o usuário realize login na plataforma.
+#### Pré-condição: Estar cadastrado no sistema
+#### Passos:
+| **Passo** | **Descrição**                                                                 |
+|-----------|-------------------------------------------------------------------------------|
+| 1         | Acessar o app |
+| 2         | Acessar a tela de login |
+| 3         | Preencher todas as informações solicitadas pelo formulário |
+
+#### Resultados:
+**Resultado Esperado:** Quando o usuário preencher os campos do formulário, essas informações serão processadas. Se a autenticação for válida, o usuário será redirecionado para a página Home.
+
+**Resultado real:**
+
+### 2.1 Login com credenciais incorretas:
+#### Resultados:
+**Resultado Esperado:** Quando o usuário tentar realizar login com credenciais inválidas, o formulário apresentará a seguinte mensagem de erro: "Email ou senha incorretos".
+
+**Resultado real:**
+
+### 3. Buscar um livro:
+#### Objetivo: Permitir que o usuário faça busca dos livros na plataforma.
+#### Pré-condição: Estar logado no sistema
+#### Passos:
+| **Passo** | **Descrição**                                                                 |
+|-----------|-------------------------------------------------------------------------------|
+| 1         | Acessar o app |
+| 2         | Acessar a tela de login |
+| 3         | Fazer o login na plataforma |
+| 4         | Realizar a busca do livro |
+
+#### Resultados:
+**Resultado Esperado:** Quando o usuário preencher o campo de busca, essas informações serão processadas. Se a busca for válida, o usuário será redirecionado para a página do livro.
+
+**Resultado real:**
+
+### 4. Avaliar um livro:
+#### Objetivo: Permitir que o usuário avalie os livros que leu.
+#### Pré-condição: Estar logado no sistema
+#### Passos:
+| **Passo** | **Descrição**                                                                 |
+|-----------|-------------------------------------------------------------------------------|
+| 1         | Acessar o app |
+| 2         | Acessar a tela de login |
+| 3         | Fazer o login na plataforma |
+| 4         | Realizar a busca do livro |
+| 5        | Avaliar o livro |
+
+#### Resultados:
+**Resultado Esperado:** Quando o usuário acessar a página de um livro e realizar a avaliação, essas informações serão processadas. Se a ação for bem-sucedida, a avaliação ficará disponível na página do livro.
+
+**Resultado real:**
+
+### 3. Adicionar um livro na lista de desejos:
+#### Objetivo: Permitir que o usuário adicione livros à sua lista de desejos.
+#### Pré-condição: Estar logado no sistema
+#### Passos:
+| **Passo** | **Descrição**                                                                 |
+|-----------|-------------------------------------------------------------------------------|
+| 1         | Acessar o app |
+| 2         | Acessar a tela de login |
+| 3         | Fazer o login na plataforma |
+| 4         | Realizar a busca do livro |
+| 5         | Adicionar a lista de desejos |
+
+#### Resultados:
+**Resultado Esperado:** Quando o usuário acessar a página de um livro e adicioná-lo à lista de desejos, essas informações serão processadas. Se a ação for bem-sucedida, o livro ficará disponível na lista de desejos do usuário.
+
+**Resultado real:**
 
 # Referências
 
