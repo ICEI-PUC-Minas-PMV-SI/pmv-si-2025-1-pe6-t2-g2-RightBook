@@ -223,20 +223,77 @@ A aplicação mobile foi desenvolvida utilizando o framework React Native, com o
 
 ### Requisitos de Hardware e Software
 
+#### Requisitos para modo de desenvolvimento
 
-### Plataforma de hospedagem
+**Computadores**
+    
+*Processador (CPU):*
+Intel Core i7 (10ª geração ou superior), AMD Ryzen 7 ou processadores Apple Silicon (M1, M2, M3) para uma experiência de desenvolvimento mais fluida, compilações mais rápidas e melhor desempenho de emuladores.
+       
+*Memória RAM:*
+16 GB ou mais. A combinação de Node.js, Metro Bundler, Android Studio (para emuladores), Xcode (para iOS), e o ambiente de desenvolvimento React Native/Expo consome bastante RAM.
+        
+*Armazenamento (SSD):*
+512 GB ou mais de SSD.
+       
+*Espaço em Disco Livre:*
+150 GB+ para evitar problemas de espaço.
+        
 
+**Dispositivos de Teste (Smartphones/Tablets)**
+
+*Android:*
+Dispositivos com Android 9.0+ e hardware mais recente são ideais para garantir compatibilidade e desempenho.
+
+*iOS:*
+Qualquer iPhone ou iPad moderno (iOS 13+ ou superior).
+
+### Plataforma de execução do build do App
+
+Foi utilizada a Expo Application Services (EAS) que se trata de um conjunto de serviços em nuvem para facilitar o desenvolvimento, build e distribuição de aplicativos React Native, para efetuar e manter os ambientes de build nativos na máquina local.
 
 ### Configuração do ambiente de implantação
 
+1. **Clonar o repositório:**
 
+   ```bash
+   git clone https://github.com/yohangreg/back_end_right_book.git
+   cd back_end_right_book
+   ```
+
+2. **Instalar dependências:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Build do App na plataforma expo:**
+
+    Para o build local da da aplicação deve ser efetuado o comando
+    ```bash
+    eas build --platform android
+    ```
+
+3. **Execução em máquina local com uso de emulador:**
+
+    ```bash
+    npx expo start
+    ```
+    Após a inicialização, apertar o botão "a" para rodar o build do Android no emulador.
+   
+   
 ### Deploy da aplicação
 
+Para o build local da da aplicação deve ser efetuado o comando
+```bash
+eas build --platform android
+```
 
 ### Aplicação em produção local
 
 Após o deploy, a aplicação está disponibilizada na URL na versão web (http://localhost:8081), podendo ser acessada pelo emulador do Android Studio ou por meio de QR code em dispositivos móveis.
 
+---
 
 ## Testes
 
