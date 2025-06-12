@@ -313,13 +313,13 @@ Foram realizados teste manuais para garantir a funcionabilidade da plataforma.
 #### Resultados:
 **Resultado esperado:** Quando o usuário preeencher todos os campos do formulário, essas informações serão processadas. Caso o cadastro seja válido, o usuário será redirecionado à página Home.
 
-**Resultado real:**
-
 ### 1.1 Cadastro inválido:
 #### Resultados:
 **Resultado esperado:** Quando o usuário tentar se cadastrar na plataforma sem preencher todas os campos do formulário, deverá aparecer uma mensagem de erro indicando que é obrigatório o preenchimento do campo.
 
 **Resultado real:**
+
+[register-mobile.webm](https://github.com/user-attachments/assets/5bc919c6-db51-4190-aca7-ccda6284dc3a)
 
 ### 2. Login:
 #### Objetivo: Permitir que o usuário realize login na plataforma.
@@ -334,13 +334,13 @@ Foram realizados teste manuais para garantir a funcionabilidade da plataforma.
 #### Resultados:
 **Resultado Esperado:** Quando o usuário preencher os campos do formulário, essas informações serão processadas. Se a autenticação for válida, o usuário será redirecionado para a página Home.
 
-**Resultado real:**
-
 ### 2.1 Login com credenciais incorretas:
 #### Resultados:
 **Resultado Esperado:** Quando o usuário tentar realizar login com credenciais inválidas, o formulário apresentará a seguinte mensagem de erro: "Email ou senha incorretos".
 
 **Resultado real:**
+
+[login-mobile.webm](https://github.com/user-attachments/assets/467d3926-9ef8-42ae-b7dc-b0970a5671cf)
 
 ### 3. Buscar um livro:
 #### Objetivo: Permitir que o usuário faça busca dos livros na plataforma.
@@ -357,6 +357,8 @@ Foram realizados teste manuais para garantir a funcionabilidade da plataforma.
 **Resultado Esperado:** Quando o usuário preencher o campo de busca, essas informações serão processadas. Se a busca for válida, o usuário será redirecionado para a página do livro.
 
 **Resultado real:**
+
+[search-book-mobile.webm](https://github.com/user-attachments/assets/7a6b51d9-6cfa-4459-b766-8635a74999f0)
 
 ### 4. Avaliar um livro:
 #### Objetivo: Permitir que o usuário avalie os livros que leu.
@@ -375,7 +377,9 @@ Foram realizados teste manuais para garantir a funcionabilidade da plataforma.
 
 **Resultado real:**
 
-### 3. Adicionar um livro na lista de desejos:
+[review-book-mobile.webm](https://github.com/user-attachments/assets/d7bc0c3c-d97a-41e8-ab5a-de9d01d1b28c)
+
+### 5. Adicionar um livro na lista de desejos:
 #### Objetivo: Permitir que o usuário adicione livros à sua lista de desejos.
 #### Pré-condição: Estar logado no sistema
 #### Passos:
@@ -391,6 +395,8 @@ Foram realizados teste manuais para garantir a funcionabilidade da plataforma.
 **Resultado Esperado:** Quando o usuário acessar a página de um livro e adicioná-lo à lista de desejos, essas informações serão processadas. Se a ação for bem-sucedida, o livro ficará disponível na lista de desejos do usuário.
 
 **Resultado real:**
+
+[wish-list-mobile.webm](https://github.com/user-attachments/assets/d0492e44-02d0-49b4-bee8-f04abb5a342a)
 
 # Referências
 
