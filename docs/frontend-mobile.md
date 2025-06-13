@@ -223,7 +223,7 @@ A aplicação mobile foi desenvolvida utilizando o framework React Native, com o
 
 ### Requisitos de Hardware e Software
 
-#### Requisitos para modo de desenvolvimento
+#### Requisitos para modo de desenvolvimento local
 
 **Computadores**
     
@@ -267,12 +267,13 @@ Foi utilizada a Expo Application Services (EAS) que se trata de um conjunto de s
    npm install
    ```
 
-3. **Build do App na plataforma expo:**
+3. **Build do App na plataforma expo por meio do EAS:**
 
-    Para o build local da da aplicação deve ser efetuado o comando
+    Para o build local da aplicação gerenciada pelo EAS deve ser efetuado o comando
     ```bash
     eas build --platform android
     ```
+    Após o build será criado um arquivo .apk que poderá ser utilizado no emulador ou no celular, por meio do App "Expo go".
 
 3. **Execução em máquina local com uso de emulador:**
 
@@ -281,13 +282,7 @@ Foi utilizada a Expo Application Services (EAS) que se trata de um conjunto de s
     ```
     Após a inicialização, apertar o botão "a" para rodar o build do Android no emulador.
    
-   
-### Deploy da aplicação
-
-Para o build local da da aplicação deve ser efetuado o comando
-```bash
-eas build --platform android
-```
+  
 
 ### Aplicação em produção local
 
