@@ -393,6 +393,3 @@ Foram realizados teste manuais para garantir a funcionabilidade da plataforma.
 
 [wish-list-mobile.webm](https://github.com/user-attachments/assets/d0492e44-02d0-49b4-bee8-f04abb5a342a)
 
-# Referências
-
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
