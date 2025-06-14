@@ -167,6 +167,7 @@ AsyncStorage - 2.1.2 @react-native-async-storage
 
 reactotron 2.6.1
 
+<img src="https://github.com/user-attachments/assets/6ecbe113-fe8e-4264-a2d9-07b70b84c52d" alt="tela reactotron" width="420">
 
 ## Considerações de Segurança
 
