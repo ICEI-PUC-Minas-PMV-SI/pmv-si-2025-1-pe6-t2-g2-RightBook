@@ -133,6 +133,41 @@ Diagrama de telas e fluxo na aplicação.
 
 ## Tecnologias Utilizadas
 
+As principais tecnologias utilizadas para o desenvolvimento da aplicação foram:
+
+***Biblioteca utilizada para o desenvolvimento da solução***
+
+React Native - 0.79.2
+
+***Plataforma que fornece framework para build multiplataforma (android, ios web)***
+
+Expo - 53.0.9
+
+***Bibliotecas de estilo***
+
+Além das constantes do próprio React Native - 0.79.2, foram também utilizados:
+
+React Native Paper - 5.14.3
+
+react-native-reanimated - 3.17.4
+
+***Ferramentas de roteamento e navegação***
+
+expo-router 5.0.6
+
+***Liguagens de desenvolvimento e tipagem***
+
+TypeScript - 5.8.3
+
+***Autenticação e segurança***
+
+AsyncStorage - 2.1.2 @react-native-async-storage
+
+***Ferramentas de debug***
+
+reactotron 2.6.1
+
+
 ## Considerações de Segurança
 
 ### Autenticação e Autorização
